@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools ="http:schemas.android.com/tools"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+   
+   <TableRow>
+   
+      <TextView
+        android:textSize ="30sp"
+        android:id = "@+id/expr"
+        android:layout_column ="0"
+        android:layout_weight ="4"
+        android:gravity="right"
+        android:paddingRight = "20dp"
+        android:scrollHorizontally = "true"
+		 />		
+   </TableRow>
+         
+   <TableRow>
+        
+      <TextView 
+        android:layout_column ="0"
+        android:layout_width="match_parent"
+        
+        android:gravity="right"
+        android:textSize = "30sp"
+        android:layout_margin="0dp"
+        android:paddingRight = "20dp"
+		android:id="@+id/result"
+		android:paddingBottom="20dp"
+		android:layout_weight="1"/>		
+   </TableRow >
+   
+   <TableRow
+       android:background="#0079D6"  >     
+       
+      <Button 
+         android:id = "@+id/brack1"
+         android:text="("
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_column="0"
+         android:onClick = "brack1"/>
+       
+       <Button 
+         android:id ="@+id/brack2"
+         android:text=")"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="100px"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="1" />
+			
+      <Button 
+         android:id ="@+id/arrow"
+         android:text="←"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="2"/>
+         
+       <Button 
+         android:id ="@+id/pow"
+         android:text="^"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="3"/>  
+       <Button 
+         android:id ="@+id/C"
+         android:text="C"
+         android:textColor="#ff0000"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="4"/>  
+         
+    </TableRow>
+
+     <TableRow>
+      <Button 
+         android:id ="@+id/num7"
+         android:text="7"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="0" />
+			
+      <Button 
+         android:id ="@+id/num8"
+         android:text="8"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="1"/>
+         
+       <Button 
+       android:id ="@+id/num9"
+         android:text="9"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="2"/>  
+       <Button 
+         android:id ="@+id/plus"
+         android:text="+"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="3"/>  
+         
+    </TableRow>
+    
+    <TableRow>
+      
+      <Button 
+         android:id ="@+id/num4"
+         android:text="4"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="0" />
+			
+      <Button
+         android:id ="@+id/num5"
+         android:text="5"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="1"/>
+         
+       <Button 
+         android:id ="@+id/num6"
+         android:text="6"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp" 
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="2"/>  
+       <Button 
+         android:id ="@+id/minus"
+         android:text="-"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="3"/>  
+         
+    </TableRow>
+    
+     <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+      <Button 
+         android:id ="@+id/num1"
+         android:text="1"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="0" />
+			
+      <Button 
+      android:id ="@+id/num2"
+         android:text="2"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp" 
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="1"/>
+         
+       <Button 
+         android:id ="@+id/num3"
+         android:text="3"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="2"/>  
+       <Button 
+         android:id ="@+id/mult" 
+         android:text="×"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"  
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:layout_column="3"/>  
+         
+    </TableRow>
+   
+   
+   <TableRow
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+      
+       <Button 
+         android:id ="@+id/num0"
+         android:text="0"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="0" />
+         
+        <Button 
+        android:id ="@+id/coma"
+         android:text="."
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="1" />
+         
+        <Button 
+         android:id ="@+id/equal"
+         android:text="="
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="2" />
+         
+        <Button 
+         android:id ="@+id/div"
+         android:text="/"
+         android:paddingTop = "15dp"
+         android:paddingBottom = "25dp"
+         android:textSize = "40sp"
+         android:layout_width ="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_column="3" />
+      
+   </TableRow>
+
+</TableLayout>
+ 
+    
+      
+	
+      
+   
+         
